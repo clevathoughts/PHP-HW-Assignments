@@ -68,7 +68,7 @@ if (isset($_POST['submit'])){
 		echo "<p>There are no songs in the list.</p>\n";
 	else {
 		$SongArray = file("SongOrganizer/songs.txt");
-		echo "<table border=\ "1\" width=\"100%\" style=\"background-color:lightgray\">\n";
+		echo "<table border=\"1\" width=\"100%\" style=\"background-color:lightgray\">\n";
 		foreach ($SongArray as $Song){
 			echo "<tr>\n";
 			echo "<td>" . htmlentities($Song) . "</td>";
